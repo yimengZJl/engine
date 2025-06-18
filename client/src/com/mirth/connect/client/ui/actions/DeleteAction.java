@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 import com.mirth.connect.client.ui.components.MirthTextInterface;
+import com.mirth.connect.client.ui.util.I18n;
 
 /** Allows for Deleting in text components. */
 public class DeleteAction extends AbstractAction {
@@ -21,7 +22,7 @@ public class DeleteAction extends AbstractAction {
     MirthTextInterface comp;
 
     public DeleteAction(MirthTextInterface comp) {
-        super("Delete");
+        super(I18n.get("delete-action"));
         this.comp = comp;
     }
 

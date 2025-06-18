@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 import com.mirth.connect.client.ui.components.MirthTextInterface;
+import com.mirth.connect.client.ui.util.I18n;
 
 /** Allows for Cutting in text components. */
 public class CutAction extends AbstractAction {
@@ -21,7 +22,7 @@ public class CutAction extends AbstractAction {
     MirthTextInterface comp;
 
     public CutAction(MirthTextInterface comp) {
-        super("Cut");
+        super(I18n.get("cut-action"));
         this.comp = comp;
     }
 

@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 import com.mirth.connect.client.ui.components.MirthTextInterface;
+import com.mirth.connect.client.ui.util.I18n;
 
 /** Allows for Selecting All in text components. */
 public class SelectAllAction extends AbstractAction {
@@ -21,7 +22,7 @@ public class SelectAllAction extends AbstractAction {
     MirthTextInterface comp;
 
     public SelectAllAction(MirthTextInterface comp) {
-        super("Select All");
+        super(I18n.get("aelect-all-action"));
         this.comp = comp;
     }
 

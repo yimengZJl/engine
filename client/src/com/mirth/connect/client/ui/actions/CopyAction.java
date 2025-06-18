@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 import com.mirth.connect.client.ui.components.MirthTextInterface;
+import com.mirth.connect.client.ui.util.I18n;
 
 /** Allows for Copying in text components. */
 public class CopyAction extends AbstractAction {
@@ -21,7 +22,7 @@ public class CopyAction extends AbstractAction {
     MirthTextInterface comp;
 
     public CopyAction(MirthTextInterface comp) {
-        super("Copy");
+        super(I18n.get("copy-action"));
         this.comp = comp;
     }
 

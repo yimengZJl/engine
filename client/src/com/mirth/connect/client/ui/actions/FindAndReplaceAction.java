@@ -20,6 +20,7 @@ import javax.swing.SwingUtilities;
 import org.syntax.jedit.JEditTextArea;
 
 import com.mirth.connect.client.ui.FindRplDialog;
+import com.mirth.connect.client.ui.util.I18n;
 
 public class FindAndReplaceAction extends AbstractAction {
 
@@ -27,7 +28,7 @@ public class FindAndReplaceAction extends AbstractAction {
     FindRplDialog find;
 
     public FindAndReplaceAction(JEditTextArea comp) {
-        super("Find/Replace");
+        super(I18n.get("find-replace-action"));
         this.comp = comp;
     }
 

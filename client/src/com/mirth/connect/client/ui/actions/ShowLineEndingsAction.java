@@ -16,6 +16,7 @@ import javax.swing.AbstractAction;
 import org.syntax.jedit.JEditTextArea;
 
 import com.mirth.connect.client.ui.Frame;
+import com.mirth.connect.client.ui.util.I18n;
 
 public class ShowLineEndingsAction extends AbstractAction {
 
@@ -23,7 +24,7 @@ public class ShowLineEndingsAction extends AbstractAction {
     Frame frame;
 
     public ShowLineEndingsAction(JEditTextArea textArea) {
-        super("Show Line Endings");
+        super(I18n.get("show-line-endings-action"));
         this.textArea = textArea;
 
     }

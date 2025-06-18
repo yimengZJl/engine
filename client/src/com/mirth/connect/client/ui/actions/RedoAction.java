@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 import com.mirth.connect.client.ui.components.MirthSyntaxTextArea;
+import com.mirth.connect.client.ui.util.I18n;
 
 /** Allows for Redo in text components. */
 public class RedoAction extends AbstractAction {
@@ -21,7 +22,7 @@ public class RedoAction extends AbstractAction {
     MirthSyntaxTextArea comp;
 
     public RedoAction(MirthSyntaxTextArea comp) {
-        super("Redo");
+        super(I18n.get("redo-action"));
         this.comp = comp;
     }
 

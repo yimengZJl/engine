@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 import com.mirth.connect.client.ui.components.MirthSyntaxTextArea;
+import com.mirth.connect.client.ui.util.I18n;
 
 /** Allows for Undo in text components. */
 public class UndoAction extends AbstractAction {
@@ -21,7 +22,7 @@ public class UndoAction extends AbstractAction {
     MirthSyntaxTextArea comp;
 
     public UndoAction(MirthSyntaxTextArea comp) {
-        super("Undo");
+        super(I18n.get("undo-action"));
         this.comp = comp;
     }
 
